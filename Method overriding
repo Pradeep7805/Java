@@ -1,0 +1,21 @@
+class Company{
+    void full(){
+        System.out.println("nice company");
+    }
+}
+class Place extends Company{
+    void full(){
+        System.out.println("salem");
+    }
+} 
+class Peoples extends Place{
+    void full(){
+        System.out.println("765");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Peoples p = new Peoples();
+        p.full();
+    }
+}
