@@ -1,0 +1,16 @@
+class Age{
+    private int age;
+    public void setage(int age){
+        this.age=age;
+    }
+    public int getage(){
+        return age;
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Age a = new Age();
+        a.setage(89);
+        System.out.println(a.getage());
+    }
+}
