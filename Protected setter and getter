@@ -1,0 +1,19 @@
+class Father{
+    protected String land = "89";
+    protected void property(){
+        System.out.println("fathers property :"+land);
+    }
+}
+class Son extends Father{
+    public void wealth(){
+        System.out.println("sons property :"+land);
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Son s = new Son();
+        s.wealth();
+        Father f = new Father();
+        System.out.println( "Fathers property :"+f.land);
+    }
+}
