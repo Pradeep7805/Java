@@ -1,0 +1,36 @@
+abstract class Brand{
+    abstract void bike ();
+    abstract void yamaha();
+     void start(){
+        System.out.println("bike was started using kickker");
+    }
+    void stop(){
+        System.out.println("bike is stopped using disc brake");
+    }
+}
+class Pulsar extends Brand{
+    void bike(){
+        System.out.println("bike was started using petrol");
+    }
+    void yamaha(){
+        System.out.println("bike stooped using brake");
+    }
+} 
+class Apache extends Brand{
+    void bike(){
+        System.out.println("started using phone ring");
+    }
+    void yamaha(){
+        System.out.println("stopped using automatic brake");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Brand m = new Pulsar();
+        m.bike();
+        m.yamaha();
+        Brand m2 = new Apache();
+        m2.bike();
+        m2.yamaha();
+    }
+}
