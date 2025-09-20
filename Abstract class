@@ -1,0 +1,26 @@
+abstract class Hamam{
+    abstract void soap();
+     void brand(){
+        System.out.println("Hamam was intoduced in 1967");
+    }
+}
+class Medi extends Hamam{
+    void soap(){
+        System.out.println("Medi was an light green colour");
+    }
+} 
+class Mysore extends Hamam{
+    void soap(){
+        System.out.println("Mysore was an round shape");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Hamam m = new Medi();
+        m.soap();
+        m.brand();
+        Hamam m2 = new Mysore();
+        m2.soap();
+        m2.brand();
+    }
+}
